@@ -117,7 +117,7 @@ textarea:focus {
 
 .header__center-search input {
     height: 40px;
-    min-width: 200px;
+    min-width: 196px;
     background: var(--bg-secondary-color);
     padding: 15px;
     border: none;
@@ -335,6 +335,10 @@ textarea:focus {
     }
 
     .product__item-order {
+        margin-top: 20px;
+    }
+
+    .product__item-order {
         max-width: 100%
     }
 }
@@ -342,6 +346,10 @@ textarea:focus {
 @media screen and (max-width: 576px) {
     .product__item-image a {
         padding: 15px;
+    }
+
+    .product__item-order {
+        padding: 10px 22px 32px 22px;
     }
 }
 
@@ -439,6 +447,10 @@ hr {
     width: 100%;
 }
 
+.table__data tr {
+    display: flex;
+}
+
 .table__data table th {
     color: var(--primary-color);
     padding: 15px 20px;
@@ -453,6 +465,26 @@ hr {
 
 .table__data tbody tr:nth-child(2n+1) {
     background: #FFF;
+}
+
+/* Fixed cell values */
+.table__data tr td:nth-of-type(1),
+.table__data tr th:nth-of-type(1) {
+    min-width: 160px;
+}
+
+.table__data tr td:nth-of-type(2),
+.table__data tr th:nth-of-type(2),
+.table__data tr td:nth-of-type(4),
+.table__data tr th:nth-of-type(4) {
+    min-width: 130px;
+}
+
+.table__data tr td:nth-of-type(3),
+.table__data tr th:nth-of-type(3),
+.table__data tr td:nth-of-type(5),
+.table__data tr th:nth-of-type(5) {
+    min-width: 100px;
 }
 
 /* Modal */
